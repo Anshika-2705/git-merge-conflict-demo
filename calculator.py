@@ -3,8 +3,10 @@ def calculate(a, b, op):
         return a + b
     elif op == '-':
         return a - b
+    elif op == '*':
+        return a * b
     else:
-        return "Invalid operator"
+        return "Unsupported operation"
 
 if __name__ == "__main__":
-    print("Result:", calculate(10, 5, '+'))
+    print("Result:", calculate(10, 5, '*'))
